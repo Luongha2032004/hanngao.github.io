@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+        }
+        .container{
+            margin: 0 auto;
+            position: relative;
+            width: 1400px ;
+            min-height: 800px;
+            border: 5px solid black;
+        }
+        .header{
+            overflow: auto;
+            border:  5px solid red;
+        }
+        .header>div{
+            border: 5px solid purple;
+            float: left;
+        }
+        #logo{
+            width: 30%;
+        }
+        #newest{
+            width: 30%;
+        }
+        #date{
+            width: 15%;
+        }
+        #weather{
+            width: 10%;
+        }
+        #account{
+            width: 15%;
+        }
+        .menu-bar{
+            border:  5px solid green;
+        }
+        .content{
+            overflow: auto;
+            border: 5px solid blue;
+        }
+        .content>.sub-content{
+            float: left;
+            min-height: 500px;
+            border: 5px solid orange;
+
+        }
+        .content-left{
+            width: 20%;
+        }
+        .content-center{
+            width: 50%;
+        }
+        .content-right{
+            width: 30%;
+        }
+        .sub-content>.content-1{
+            min-height: 115px;
+            border: 5px solid rgb(133, 38, 188);
+        }
+        .content2{
+            min-height: 350px;
+            border: 5px solid pink;
+        }
+        .content3{
+            min-height: 115px;
+            border: 5px solid pink;
+        }
+        .content6{
+            min-height: 50px;
+            border: 5px solid tomato;
+        }
+        .content5{
+            min-height: 180px;
+            border: 5px solid turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="logo">LOGO</div>
+            <div id="newest">NEWEST</div>
+            <div id="date">DATE</div>
+            <div id="weather">WEATHER</div>
+            <div id="account">ACCOUNT</div>
+        </div>
+        <div class="menu-bar">menu-bar</div>
+        <div class="content">
+            <div class="sub-content content-left">
+                <div class="content5">img1</div>
+                <div class="content6">contentt</div>
+                <div class="content5">imng2</div>
+                <div class="content6">contentt</div>
+            </div>
+            <div class="sub-content content-center">
+                <div class="content2">content-2</div>
+                <div class="content3">content-3</div>
+            </div>
+            <div class="sub-content content-right">
+                <div class="content-1 right-1">content-1</div>
+                <div class="content-1 right-2">content-2</div>
+                <div class="content-1 right-3">content-3</div>
+                <div class="content-1 right-4">content-4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
